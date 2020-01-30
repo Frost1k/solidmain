@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap");
 nav {
   width: 100%;
-  height: 100px;
-  background: #f5f5f5;
+  height: 70px;
+  background: #f5f5f5d7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,14 +11,60 @@ nav {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+
+nav .logo img {
+  width: 210px;
+}
+
 nav h4 {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #000;
+  margin-bottom: 0px;
+}
+
+nav .phone-top {
+  text-align: center;
+  line-height: 1.2;
+}
+
+nav .phone-top a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #000000a8;
+}
+
+nav .phone-top a:active {
+  text-decoration: none;
+}
+
+nav .phone-top button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #fd1313;
+  padding: 0px 2px 0px 2px;
+  margin: 0px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+nav .phone-top button:hover {
+  text-decoration: underline;
 }
 
 .headhesive {
-  background: #000;
+  background: #0000001e;
   position: fixed;
   width: 100%;
   -webkit-transform: translateY(-200%);
@@ -30,11 +76,43 @@ nav h4 {
 .headhesive--stick {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .headhesive--stick h4 {
-  color: #fff;
+  color: #000000;
+}
+
+.headhesive--stick .phone-top {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.headhesive--stick .phone-top a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #ff0000a8;
+}
+
+.headhesive--stick .phone-top a:active {
+  color: #ff0000a8;
+}
+
+.headhesive--stick .phone-top button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #fd1313;
+  padding: 0px 2px 0px 2px;
+  margin: 0px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.headhesive--stick .phone-top button:hover {
+  text-decoration: underline;
 }
 
 header {
